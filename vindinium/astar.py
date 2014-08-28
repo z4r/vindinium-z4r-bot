@@ -51,7 +51,8 @@ class AStar(object):
                         return child.path
                     #print child.value, distance
                     self.openset.put((distance, child))
-                    #print [(p, s.value) for p, s in sorted(self.openset.queue)]
+                    #print 'Q', [(p, s.value) for p, s in sorted(self.openset.queue)]
+                    #print 'S', [s.value for s in self.closedset]
 
 if __name__ == '__main__':
     from board import Board
